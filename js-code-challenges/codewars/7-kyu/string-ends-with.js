@@ -6,8 +6,7 @@ function solution(str, ending) {
 
     let endChar = end.length;
 
-    if (start.slice(0, endChar) === end) return true;
-    else return false;
+    return start.slice(0, endChar) === end;
 }
 
 console.log(solution('backend', 'end'));
