@@ -73,18 +73,18 @@
 // contarPalavras("  Olá,    Pedro! Como você  está?  ") 
 // → 5
 
-function contadorPalavras(str) {
+// function contadorPalavras(str) {
 
-    if(!str || str.trim() === '') return 0;
+//     if(!str || str.trim() === '') return 0;
 
-    const semPontuacao = str.replace(/[^\w\s]/g)
+//     const semPontuacao = str.replace(/[^\w\s]/g)
 
-    const palavras = semPontuacao.trim().split(/\s+/);
+//     const palavras = semPontuacao.trim().split(/\s+/);
 
-    return palavras.length;
-}
+//     return palavras.length;
+// }
 
-console.log(contadorPalavras('  '));
+// console.log(contadorPalavras('  '));
 
 // _________________________________________________________________________________________________________________________________
 // 🧠 Exercício 4 – Primeiras Letras
@@ -95,6 +95,22 @@ console.log(contadorPalavras('  '));
 
 // sigla("  Pedro Henrique de Oliveira  ") 
 // → "PHO"
+
+function primeirasLetras(str) {
+    if(!str || str.trim() === '') return false;
+
+    const semPontuacao = str.replace(/[^\s\w]/g, '')
+
+    const palavras = semPontuacao.trim().split(/\s+/);
+
+
+    const primeiraLetra = palavras.map(palavra => palavra.charAt(0).toUpperCase())
+    .join('');
+
+    return primeiraLetra;
+}
+
+console.log(primeirasLetras('Pedro     Henrique de Oliveira Alves'));
 
 // _________________________________________________________________________________________________________________________________
 // 🧠 Exercício 5 – Texto com Pontuação Final
