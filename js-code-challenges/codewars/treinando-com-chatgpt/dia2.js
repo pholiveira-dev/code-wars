@@ -5,10 +5,10 @@
 
 // Resultado esperado: [2, 4, 6, 8]
 
-// const numeros = [1, 2, 3, 4];
+const numeros = [1, 2, 3, 4];
 
-// const duplicaNumeros = numeros.map(numero => numero * 2);
-// console.log(duplicaNumeros);
+const duplicaNumeros = numeros.map(numero => numero * 2);
+console.log(duplicaNumeros);
 
 // // _______________________________________________________________________________________
 
@@ -19,11 +19,11 @@
 
 // // Resultado esperado: ["10", "20", "30"]
 
-// const numbers = [10, 20, 30];
+const numbers = [10, 20, 30];
 
-// const numbersToString = numbers.map( number => number.toString());
+const numbersToString = numbers.map( number => number.toString());
 
-// console.log(numbersToString);
+console.log(numbersToString);
 // // _______________________________________________________________________________________
 
 // // 🧪 Exercício 3 – Primeiras letras maiúsculas
@@ -33,13 +33,13 @@
 
 // // Resultado esperado: ["P", "H", "A"]
 
-// const palavras = ["pedro", "henrique", "alves"];
+const palavras = ["pedro", "henrique", "alves"];
 
-// const letras = palavras.map(palavra => palavra.trim().split(''));
+const letras = palavras.map(palavra => palavra.trim().split(''));
 
-// const letraMaiuscula = letras.map( maiuscula => maiuscula.join(' ').charAt(0).toUpperCase())
+const letraMaiuscula = letras.map( maiuscula => maiuscula.join(' ').charAt(0).toUpperCase())
 
-// console.log(letraMaiuscula);
+console.log(letraMaiuscula);
 // // _______________________________________________________________________________________
 
 
@@ -50,14 +50,14 @@
 
 // // Resultado esperado: ["Ana-0", "Bruno-1", "Carlos-2"]
 
-// const nomes = ["Ana", "Bruno", "Carlos"];
+const nomes = ["Ana", "Bruno", "Carlos"];
 
-// const nomesIndice = nomes.map((nome, index) => {
-//     return `${nome}-${index}`;
-// })
+const nomesIndice = nomes.map((nome, index) => {
+    return `${nome}-${index}`;
+})
 
-// console.log(nomesIndice)
-// _______________________________________________________________________________________
+console.log(nomesIndice)
+_______________________________________________________________________________________
 
 // Exercício 5 – Nome completo formatado
 // Dado um array de objetos, transforme em nomes completos.
@@ -69,19 +69,19 @@
 
 // Resultado esperado: ["Pedro Henrique", "Maria Silva"]
 
-// const pessoas = [
-//   { nome: "Pedro", sobrenome: "Henrique" },
-//   { nome: "Maria", sobrenome: "Silva" }
-// ];
+const pessoas = [
+  { nome: "Pedro", sobrenome: "Henrique" },
+  { nome: "Maria", sobrenome: "Silva" }
+];
 
-// const pessoa = pessoas.map( dados => {
-//     const nomePessoa = dados.nome;
-//     const sobrenomePessoa = dados.sobrenome
+const pessoa = pessoas.map( dados => {
+    const nomePessoa = dados.nome;
+    const sobrenomePessoa = dados.sobrenome
 
-//     return nomePessoa + ' ' + sobrenomePessoa;
-// });
+    return nomePessoa + ' ' + sobrenomePessoa;
+});
 
-// console.log(pessoa);
+console.log(pessoa);
 
 // // _______________________________________________________________________________________
 // // Exercício 6 – Remover espaços e colocar em maiúsculo
@@ -91,11 +91,11 @@
 
 // // // Resultado esperado: ["PEDRO", "HENRIQUE", "DEV"]
 
-// const sujo = ["  pedro ", "henrique  ", "  dev"];
+const sujo = ["  pedro ", "henrique  ", "  dev"];
 
-// const formatando = sujo.map( limpando => limpando.trim().toUpperCase());
+const formatando = sujo.map( limpando => limpando.trim().toUpperCase());
 
-// console.log(formatando);
+console.log(formatando);
 // // _______________________________________________________________________________________
 // // Exercício 7 – Array de siglas
 // // Dado um array de frases, retorne as iniciais de cada palavra em maiúsculas, formando uma sigla.
@@ -104,15 +104,15 @@
 
 // // Resultado esperado: ["PB", "IDP"]
 
-// const frases = ["programador backend", "interface de programação"];
+const frases = ["programador backend", "interface de programação"];
 
-// const siglas = frases.map(frase => 
-//     frase.split(' ')
-//     .map(palavra => palavra.charAt(0).toUpperCase())
-//     .join('')
-// );
+const siglas = frases.map(frase => 
+    frase.split(' ')
+    .map(palavra => palavra.charAt(0).toUpperCase())
+    .join('')
+);
 
-// console.log(siglas)
+console.log(siglas)
 
 // // _______________________________________________________________________________________
 // // 🧪 Exercício 8 – Converter em leet speak
