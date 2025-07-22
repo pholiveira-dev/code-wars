@@ -33,17 +33,17 @@
 
 // // // Sua solução aqui
 
-const [primeiraFruta, segundaFruta] = frutas;
+// const [primeiraFruta, segundaFruta] = frutas;
 
-console.log(primeiraFruta)
-console.log(segundaFruta)
+// console.log(primeiraFruta)
+// console.log(segundaFruta)
 
-// Exemplo esperado:
-// const primeiraFruta = 'Maçã';
-// const segundaFruta = 'Banana';
+// // Exemplo esperado:
+// // const primeiraFruta = 'Maçã';
+// // const segundaFruta = 'Banana';
 
-console.log(primeiraFruta); // Deve imprimir 'Maçã'
-console.log(segundaFruta); // Deve imprimir 'Banana'
+// console.log(primeiraFruta); // Deve imprimir 'Maçã'
+// console.log(segundaFruta); // Deve imprimir 'Banana'
 // ____________________________________________________________________________________________________________
 
 // Exercício 3: Desestruturação com Renomeação de Variáveis (Objetos)
@@ -51,16 +51,16 @@ console.log(segundaFruta); // Deve imprimir 'Banana'
 // Contexto: Você tem um objeto com informações de um produto.
 // Tarefa: Desestruture as propriedades nome e preco, mas renomeie nome para nomeProduto e preco para valor.
 
-const produto = {
-  nome: 'Teclado Mecânico',
-  preco: 250.00,
-  categoria: 'Periféricos'
-};
+// const produto = {
+//   nome: 'Teclado Mecânico',
+//   preco: 250.00,
+//   categoria: 'Periféricos'
+// };
 
-const { nome: nomeProduto, preco: valor } = produto;
+// const { nome: nomeProduto, preco: valor } = produto;
 
-console.log(nomeProduto);
-console.log(valor)
+// console.log(nomeProduto);
+// console.log(valor);
 
 // // Sua solução aqui
 // // Exemplo esperado:
@@ -81,7 +81,12 @@ console.log(valor)
 //   // idioma não está presente
 // };
 
-// // Sua solução aqui
+// // // Sua solução aqui
+
+// const {tema = 'claro', idioma ='pt-BR'} = configuracoesUsuario;
+
+// console.log(idioma)
+
 // // Exemplo esperado:
 // // const tema = 'escuro';
 // // const idioma = 'pt-BR'; (valor padrão)
@@ -91,6 +96,11 @@ console.log(valor)
 
 // // Teste com outro objeto sem tema:
 // const configuracoesPadrao = {};
+
+// const {tema = 'claro', idioma = 'pt-BR'} = configuracoesPadrao;
+
+// console.log(tema)
+// console.log(idioma)
 // // Sua solução aqui (reaproveite a desestruturação para este objeto)
 // // Exemplo esperado:
 // // const tema2 = 'claro'; (valor padrão)
@@ -107,7 +117,12 @@ console.log(valor)
 
 // const cores = ['Vermelho', 'Verde', 'Azul', 'Amarelo'];
 
-// // Sua solução aqui
+// // // Sua solução aqui
+
+// const [primeiraCor, , terceiraCor] = cores;
+// console.log(primeiraCor);
+// console.log(terceiraCor);
+
 // // Exemplo esperado:
 // // const primeiraCor = 'Vermelho';
 // // const terceiraCor = 'Azul';
@@ -125,17 +140,23 @@ console.log(valor)
 // // A função deve ser definida algo como:
 // // function imprimirDetalhesLivro({ titulo, autor }) { ... }
 
-// const livro1 = {
-//   titulo: 'O Pequeno Príncipe',
-//   autor: 'Antoine de Saint-Exupéry',
-//   ano: 1943
-// };
+const livro1 = {
+  titulo: 'O Pequeno Príncipe',
+  autor: 'Antoine de Saint-Exupéry',
+  ano: 1943
+};
 
-// const livro2 = {
-//   titulo: '1984',
-//   autor: 'George Orwell',
-//   ano: 1949
-// };
+const livro2 = {
+  titulo: '1984',
+  autor: 'George Orwell',
+  ano: 1949
+};
+
+function imprimirDetalhesLivro({titulo, autor}) {
+  return `Título: ${titulo}, Autor: ${autor}`
+}
+
+console.log(imprimirDetalhesLivro(livro2));
 
 // imprimirDetalhesLivro(livro1);
 // // Deve imprimir: "Título: O Pequeno Príncipe, Autor: Antoine de Saint-Exupéry"
