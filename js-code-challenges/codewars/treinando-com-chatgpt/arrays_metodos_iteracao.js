@@ -1,3 +1,5 @@
+// ########## EXERCÍCIOS SOBRE FILTER ##########
+
 // 🧪 Exercício 1 – Filtrar números pares
 // Dado um array de números, retorne apenas os números pares.
 
@@ -70,3 +72,66 @@ const semRepeticao = numeros6.filter((num, _, arr) => {
     return arr.indexOf(num) === arr.lastIndexOf(num);
 })
 console.log("Exercício 6:", semRepeticao /* resultado */);
+
+// ########## EXERCÍCIOS SOBRE REDUCE ##########
+
+// 🧮 Exercício 1 – Soma total dos números
+// Some todos os valores do array
+
+const numeros7 = [1, 2, 3, 4, 5];
+
+// Sua lógica aqui...
+
+const somaValores = numeros7.reduce((num, acc) => acc += num)
+console.log("Exercício 1:", somaValores);
+
+// 🧮 Exercício 2 – Produto de todos os números
+// Multiplique todos os valores do array
+
+const numeros8 = [2, 3, 4];
+
+const multiplique = numeros8.reduce((num, mult) => mult * num)
+
+// Sua lógica aqui...
+console.log("Exercício 2:", multiplique);
+
+// 🧮 Exercício 3 – Concatenar palavras em uma frase
+// Junte todas as palavras formando uma frase
+
+const palavras9 = ["A", "enfermagem", "transforma", "vidas"];
+
+// Sua lógica aqui...
+
+const juntaFrase = palavras9.reduce((frase, palavra) => frase + " " + palavra);
+console.log("Exercício 3:", juntaFrase);
+
+
+// 🧮 Exercício 4 – Contar quantas vezes cada número aparece
+// Retorne um objeto com a contagem de cada número
+
+const numeros10 = [1, 2, 2, 3, 3, 3];
+
+// Sua lógica aqui...
+console.log("Exercício 4:", contarRepeticoes);
+
+
+// 🧮 Exercício 5 – Soma dos valores de um array de objetos
+// Somar os valores da chave "horas" de cada item
+
+const estagios5 = [
+  { aluno: "Pedro", horas: 6 },
+  { aluno: "Ana", horas: 8 },
+  { aluno: "João", horas: 4 },
+];
+
+// Sua lógica aqui...
+console.log("Exercício 5:", /* resultado */);
+
+
+// 🧮 Exercício 6 – Encontrar o maior número do array
+// Use reduce para retornar o maior valor
+
+const numeros11 = [10, 25, 7, 99, 34];
+
+// Sua lógica aqui...
+console.log("Exercício 6:", /* resultado */);
