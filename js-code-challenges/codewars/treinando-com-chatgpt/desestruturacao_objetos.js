@@ -83,7 +83,7 @@
 
 // // // Sua solução aqui
 
-// const {tema = 'claro', idioma ='pt-BR'} = configuracoesUsuario;
+const {tema = 'claro', idioma ='pt-BR'} = configuracoesUsuario;
 
 // console.log(idioma)
 
