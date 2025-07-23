@@ -112,7 +112,13 @@ console.log("Exercício 3:", juntaFrase);
 const numeros10 = [1, 2, 2, 3, 3, 3];
 
 // Sua lógica aqui...
-console.log("Exercício 4:", contarRepeticoes);
+
+const numUnicos = numeros10.reduce((acc, num) => {
+  acc[num] = (acc[num] || 0) + 1;
+  return acc
+}, {})
+
+console.log("Exercício 4:", numUnicos);
 
 
 // 🧮 Exercício 5 – Soma dos valores de um array de objetos
@@ -125,13 +131,26 @@ const estagios5 = [
 ];
 
 // Sua lógica aqui...
-console.log("Exercício 5:", /* resultado */);
+const horasEstagio = estagios5.reduce((acumulador, horas) => {
+  return acumulador += horas.horas;
+}, 0)
+console.log("Exercício 5:", horasEstagio);
 
 
 // 🧮 Exercício 6 – Encontrar o maior número do array
 // Use reduce para retornar o maior valor
 
-const numeros11 = [10, 25, 7, 99, 34];
+// const numeros11 = [10, 25, 7, 99, 34];
+const numeros11 = [99, 5, 359, 70, 358];
 
 // Sua lógica aqui...
-console.log("Exercício 6:", /* resultado */);
+
+const maiorValor = numeros11.reduce((acc, valor) => {
+  if(valor > acc) {
+    return valor
+  }
+  return acc;
+}, numeros11[0])
+  
+
+console.log("Exercício 6:", maiorValor);
