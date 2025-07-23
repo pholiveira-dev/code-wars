@@ -82,7 +82,7 @@ const numeros7 = [1, 2, 3, 4, 5];
 
 // Sua lógica aqui...
 
-const somaValores = numeros7.reduce((num, acc) => acc += num)
+const somaValores = numeros7.reduce((acc, num) => acc += num, 0)
 console.log("Exercício 1:", somaValores);
 
 // 🧮 Exercício 2 – Produto de todos os números
@@ -90,7 +90,7 @@ console.log("Exercício 1:", somaValores);
 
 const numeros8 = [2, 3, 4];
 
-const multiplique = numeros8.reduce((num, mult) => mult * num)
+const multiplique = numeros8.reduce((acc, num) => acc * num)
 
 // Sua lógica aqui...
 console.log("Exercício 2:", multiplique);
