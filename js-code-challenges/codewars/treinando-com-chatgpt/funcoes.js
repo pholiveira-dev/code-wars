@@ -78,16 +78,27 @@ const somarValores = (a, b) => {
   const soma = a + b
   return soma
 };
-
 console.log(somarValores(10, -1))
+
 // 🟦 Exercício 9 - Arrow function: Verifica se a senha é segura
-const senhaSegura = senha => {
+function senhaSegura(senha) {
   // A senha deve ter pelo menos 8 caracteres e conter "@"
-};
+
+  const temArroba = senha.includes("@");
+  const tamanhoMinimo = senha.length >= 8;
+
+  if(temArroba && tamanhoMinimo) return "Senha segura";
+  else return "Senha inválida!"
+}
+
+console.log(senhaSegura('@12345678'))
 
 
 // 🟦 Exercício 10 - Arrow function + array: Filtra números pares
 const listaNumeros = [1, 2, 3, 4, 5, 6, 7, 8];
 const numerosParesFiltrados = listaNumeros.filter(num => {
   // Retorne apenas os números pares do array
+  return num % 2 === 0
 });
+
+console.log(numerosParesFiltrados);

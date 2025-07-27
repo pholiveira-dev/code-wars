@@ -13,9 +13,10 @@
   Exemplos inválidos: "Jo", "João123", "Ana!"
 */
 const nomeApenasLetras = "Pedro";
-function resultadoNomeApenasLetras(string) {
-}; 
-console.log(resultadoNomeApenasLetras(nomeApenasLetras));
+const padrao = /^[A-Za-z]{3,}$/
+
+const testaPadrao = padrao.test(nomeApenasLetras);
+console.log(testaPadrao);
 
 /* 
   Exercício 02 – Número com até duas casas decimais
