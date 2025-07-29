@@ -1,0 +1,12 @@
+[
+    {
+    "nome": "Pedro Henrique",
+    "idade": 28,
+    "esta_trabalhando": true,
+    "detalhes_profissao": {
+        "profissao": "Enfermeiro",
+        "empresa": "Centro Universitário do Distrito Federal"
+    },
+    "hobbies": ["Video-game", "Programar", "Ler"]
+    }
+]
